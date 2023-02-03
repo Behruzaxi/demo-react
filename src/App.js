@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Button from './components/Button'
+
 import "./components/style.css"
 
 function App() {
@@ -36,7 +36,7 @@ setUser("")
                     />
                     <button className='styl' onClick={handleClick}>Button</button>
                     <h1>{message}</h1>
-                {/* <Button color="blue" name="Submit" /> */}
+               
             </div>
           </div>
         </div>
