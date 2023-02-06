@@ -55,12 +55,22 @@
 import React from 'react'
 import Navbarfunc from './components/Navbar'
 import Header from './components/Header/Header'
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 export default function App() {
   return (
    <>
-   <Navbarfunc/>
-    <Header/>
+<Router>
+  <Navbarfunc/>
+  <Routes>
+    <Route path='/home' element={<Header/>}/>
+    <Route path='/result' element={<GetData/>}/>
+  </Routes>
+</Router>
+
+
+
+    <Header/> 
    </>
   )
 }
